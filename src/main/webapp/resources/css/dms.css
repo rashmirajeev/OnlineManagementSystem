@@ -1,0 +1,709 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+.error {
+    color: #ff0000;
+    font-size:12px;
+  }
+
+
+.wrapper {
+	height: 100%;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+/* header css start */
+.header {
+	background-color: #3BAFDA;
+}
+
+.headerLogin {
+	background-color: #4682B4;
+}
+
+.footer {
+	background: #000000;
+	height: 40px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 40px;
+}
+
+.content {
+	height: 100%;
+	width: 100%;
+	max-height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.middle {
+	margin-top: 20px;
+}
+.middleOne {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.clsHeight {
+	height: 100%;
+	width: 100%;
+}
+/*Check this afterwords*/
+.viwerHeight {
+	width: 50%;
+
+	/*  max-height:430px; 
+    overflow:auto;
+    overflow-x:hidden; */
+}
+
+.iconCls {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+/* .iconCls:hover {
+	width: 22px;
+	height: 22px;
+} */
+
+/*
+.folderCls {
+	height: 100%;
+	width: 20%;
+	max-width: 20%;
+	overflow: auto;
+	overflow-x: hidden;
+}
+*/
+.mainContent {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.treeView {
+	border-radius: 15px;
+	border: 0.3px solid grey;
+	background-color: rgba(0, 0, 0, .01);
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+.mstContent {
+	height: 100%;
+	width: 75%;
+	mx-height: 100%;
+	overflow: auto;
+	border-radius: 15px;
+	overflow-x: hidden;
+}
+
+.folders {
+	height: 100%;
+	width: 100%;
+	overflow-x: scroll !important;
+	white-space: nowrap;
+	/*z-index: 999;*/
+}
+
+/************** menu tree access css start**********/
+.tree, .tree ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.tree ul {
+	margin-left: 1em;
+	position: relative
+}
+
+.tree ul ul {
+	margin-left: .5em
+}
+
+.tree ul:before {
+	content: "";
+	display: block;
+	width: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid
+}
+
+.tree li {
+	margin: 0;
+	padding: 0 1em;
+	line-height: 2em;
+	color: #369;
+	cursor: pointer;
+	/***font-weight:700;***/
+	position: relative
+}
+
+.tree ul li:before {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 0;
+	border-top: 1px solid;
+	margin-top: -1px;
+	position: absolute;
+	top: 1em;
+	left: 0
+}
+
+.tree ul li:last-child:before {
+	background: #fff;
+	height: auto;
+	top: 1em;
+	bottom: 0
+}
+
+.indicator {
+	margin-right: 5px;
+}
+
+.tree li a {
+	text-decoration: none;
+	color: #369;
+}
+
+.treeOne li {
+	font-size: 14px;
+	color: #000000;
+}
+
+.tree li button, .tree li button:active, .tree li button:focus {
+	text-decoration: none;
+	color: #369;
+	border: none;
+	background: transparent;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	outline: 0;
+}
+
+.pageNmCls {
+	width: 100%;
+	height: 25px;
+	background-color: #c0c0c0;
+	font-weight: bold;
+}
+
+.padding-topCntr {
+	padding-top: 5px;
+}
+
+.abc {
+	/*  color:red;  */
+	text-decoration: underline;
+}
+
+.display {
+	/*  color:red;  */
+	text-decoration: none;
+}
+
+<!--
+fileUpload.jsp -->.thumb {
+	height: 75px;
+	border: 1px solid #000;
+	margin: 10px 5px 0 0;
+}
+
+
+/**search valu properties.jsp**/
+#progress {
+	display: none;
+}
+
+.datepicker {
+	width: 100%;
+	height: calc(1.8125rem + 2px);
+	font-size: .875rem;
+	border-radius: .2rem;
+}
+
+.treeView1 {
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+
+.folders1 {
+	height: 100%;
+	width: 100%;
+	 /* overflow-x: scroll !important;  */
+	 white-space: nowrap;
+	/*z-index: 999; */
+}
+
+.mstContent1 {
+	height: 100%;
+	width: 40%;
+	mx-height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+/* label {
+	font-size: .875rem;
+} */
+#errmsg {
+	color: red;
+	font-size: .875rem;
+}
+
+<!--
+search Viewer.jsp -->.blur {
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+}
+
+.strip {
+	height: 48px;
+	width: 100%;
+	background-color: #F0F0F0;
+}
+
+.mstContent12 {
+	height: 100%;
+	width: 45%;
+	mx-height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.content12 {
+	height: 48px;
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: #F0F0F0;
+}
+
+.content12:hover>span {
+	display: inline-block;
+	position: absolute;
+	top: -25px;
+	left: 0;
+	border: 2px solid red;
+	background-color: yellow;
+}
+
+::-webkit-scrollbar {
+	width: 1px;
+	height: 1px;
+}
+
+.folders12 {
+	height: 100%;
+	width: 100%;
+}
+
+.widthIcon10per {
+	width: 10%;
+}
+
+
+.defaultPage{
+	display: none;
+}
+
+
+.mainTwo,.mainOne {
+	/* font-size: 14px; */
+	/* font-weight: bold;  */
+	color: #212529;
+	text-align: left;
+	
+}
+.width10{
+	width:10%;
+}
+
+.bg-dashBdCard{
+	background-color: rgba(0, 0, 0, .04);
+}
+#container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+  
+/*
+#overlay {
+	position: fixed;
+	display: none;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(250, 250, 250, .1);
+	z-index: 999;
+}
+
+#popup {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	background-color:#F8F8F8;
+	border-radius: 20px;
+	border: 1px solid #99caff;
+	left: 55%;
+	right: 70%;
+	top: 80px;
+	bottom: 0px;
+	margin: auto;
+	overflow-x: scroll !important;
+	white-space: nowrap;
+	z-index: 999;
+}
+#overlay1 {
+	position: fixed;
+	display: none;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(250, 250, 250, .1);
+	z-index: 999;
+}
+
+#popup1 {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	background-color:#F8F8F8;
+	border-radius: 20px;
+	border: 1px solid #99caff;
+	left: 55%;
+	right: 70%;
+	top: 80px;
+	bottom: 0px;
+	margin: auto;
+	overflow-x: scroll !important;
+	white-space: nowrap;
+	z-index: 999;
+}
+#progress {
+	display: none;
+}
+
+
+
+
+
+.treeView12 {
+	width: 55%;
+	height: 100%;
+	float: left;
+	overflow-x: scroll !important;
+	white-space: nowrap;
+	z-index: 999;
+}
+
+
+
+
+
+
+span {
+	display: none;
+}
+
+*/
+<!--
+default page --> /* .tabs {
+	background-color: rgba(0, 0, 0, .04);
+}
+
+.tabs a {
+	color: #000000;
+	font-weight: bold;
+} */ .glyphicon-folderopen-center:before {
+	content: "\f07c";
+	color: #FFD04E;
+	font-family: FontAwesome;
+}
+
+.glyphicon-folderclose-center:before {
+	content: "\f07b";
+	color: #FFD04E;
+	font-family: FontAwesome;
+}
+
+/************** menu tree access css end**********/
+
+/* Add animation (fade in the popup) */
+@
+-webkit-keyframes fadeIn {
+	from {opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+@
+keyframes fadeIn {
+	from {opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+
+/* Memu css */
+.menu-area {
+	background: #cce6ff;
+}
+
+.dropdown-menu {
+	padding: 0;
+	margin: 0;
+	border: 0 solid transition !important;
+	border: 0 solid rgba(0, 0, 0, .15);
+	border-radius: 0;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important
+}
+
+.mainmenu a, .navbar-default .navbar-nav>li>a, .mainmenu ul li a,
+	.navbar-expand-lg .navbar-nav .nav-link {
+	color: #000000;
+	font-size: 12px;
+	text-transform: capitalize;
+	padding: 5px 15px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	display: block !important;
+}
+
+.mainmenu .active a, .mainmenu .active a:focus, .mainmenu .active a:hover,
+	.mainmenu li a:hover, .mainmenu li a:focus, .navbar-default 
+.navbar-nav>.show>a, .navbar-default 
+.navbar-nav>.show>a:focus, .navbar-default 
+.navbar-nav>.show>a:hover {
+	color: black;
+	background: #cce6ff;
+	outline: 0;
+	text-decoration: none;
+}
+/*==========Sub Menu=v==========*/
+.mainmenu .collapse ul>li:hover>a {
+	background: #cce6ff;
+}
+
+.mainmenu .collapse ul ul>li:hover>a, .navbar-default .navbar-nav .show .dropdown-menu>li>a:focus,
+	.navbar-default .navbar-nav .show .dropdown-menu>li>a:hover {
+	background: #cce6ff;
+}
+
+.mainmenu .collapse ul ul ul>li:hover>a {
+	background: #cce6ff;
+}
+
+.mainmenu .collapse ul ul, .mainmenu .collapse ul ul.dropdown-menu {
+	background: #4682B4;
+}
+
+.mainmenu .collapse ul ul ul, .mainmenu .collapse ul ul ul.dropdown-menu
+	{
+	background: #4682B4
+}
+
+.mainmenu .collapse ul ul ul ul, .mainmenu .collapse ul ul ul ul.dropdown-menu
+	{
+	background: #4682B4
+}
+
+/******************************Drop-down menu work on hover**********************************/
+.mainmenu {
+	background: none;
+	border: 0 solid;
+	margin: 0;
+	padding: 0;
+	min-height: 20px;
+	width: 100%;
+}
+/* label{
+	font-size: 1rem;
+	font-weight: 400;  
+} */
+
+@media only screen and (min-width: 767px) {
+	.mainmenu .collapse ul li:hover>ul {
+		display: block
+	}
+	.mainmenu .collapse ul ul {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		min-width: 250px;
+		display: none
+	}
+	/*******/
+	.mainmenu .collapse ul ul li {
+		position: relative
+	}
+	.mainmenu .collapse ul ul li:hover>ul {
+		display: block
+	}
+	.mainmenu .collapse ul ul ul {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		min-width: 250px;
+		display: none
+	}
+	/*******/
+	.mainmenu .collapse ul ul ul li {
+		position: relative
+	}
+	.mainmenu .collapse ul ul ul li:hover ul {
+		display: block
+	}
+	.mainmenu .collapse ul ul ul ul {
+		position: absolute;
+		top: 0;
+		left: -100%;
+		min-width: 250px;
+		display: none;
+		z-index: 1
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar-nav .show .dropdown-menu .dropdown-menu>li>a {
+		padding: 16px 15px 16px 35px
+	}
+	.navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu>li>a {
+		padding: 16px 15px 16px 45px
+	}
+}
+
+/*Profile Pic Start*/
+.picture-container{
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+.picture{
+    width: 100px;
+    height: 100px;
+    background-color: #999999;
+    border: 4px solid #CCCCCC;
+    color: #FFFFFF;
+    border-radius: 50%;
+    margin: 0px auto;
+    overflow: hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+.picture:hover{
+    border-color: #2ca8ff;
+}
+.content.ct-wizard-green .picture:hover{
+    border-color: #05ae0e;
+}
+.content.ct-wizard-blue .picture:hover{
+    border-color: #3472f7;
+}
+.content.ct-wizard-orange .picture:hover{
+    border-color: #ff9500;
+}
+.content.ct-wizard-red .picture:hover{
+    border-color: #ff3b30;
+}
+.picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.keyboardtbl {font-family: Arial, Helvetica, sans-serif; margin:0px; padding:0px;border-collapse: separate !important;border-spacing: 0;}
+.keyboardtbl td {margin:0px 5px;}
+
+.picture-src{
+    width: 100%;
+    height:100%;
+    
+}
+/*Profile Pic End*/
+
+
+.files input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    padding: 120px 0px 85px 35%;
+    text-align: center !important;
+    margin: 0;
+    width: 100% !important;
+}
+.files input:focus{     outline: 2px dashed #92b0b3;  outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear; border:1px solid #92b0b3;
+ }
+.files
+{ 
+	position:relative
+}
+.files:after {  
+	pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: "";
+   /** background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png); **/
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.color input{ background-color:#f1f1f1;}
+.files:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;  pointer-events: none;
+    width: 100%;
+    right: 0;
+   /* height: 57px;*/
+    /*content: " or drag it here. ";*/
+    display: block;
+    margin: 0 auto;
+    color: #2ea591;
+    /*font-weight: 600;*/
+    text-transform: capitalize;
+    text-align: center;
+}
+
